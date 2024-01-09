@@ -6,7 +6,7 @@
 /*   By: skuznets <skuznets@student.42yerevan.am    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 12:28:53 by skuznets          #+#    #+#             */
-/*   Updated: 2024/01/09 12:40:34 by skuznets         ###   ########.fr       */
+/*   Updated: 2024/01/09 12:42:59 by skuznets         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@ void ft_print_alphabet(void)
 		c++;
 	}
 }
-
+/*
 int main()
 {
 	ft_print_alphabet();
 	return (0);
-}
+}*/
