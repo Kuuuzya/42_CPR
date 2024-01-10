@@ -1,29 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_point.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: skuznets <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/09 02:16:13 by skuznets          #+#    #+#             */
-/*   Updated: 2024/01/10 14:20:11 by skuznets         ###   ########.fr       */
+/*   Created: 2024/01/10 15:06:07 by skuznets          #+#    #+#             */
+/*   Updated: 2024/01/10 15:06:17 by skuznets         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#ifndef FT_POINT_H
+# define FT_POINT_H
 
-void	ft_ft(int *nbr)
+typedef struct s_point
 {
-	*nbr = 42;
-}
-// int main(void)
-// {
-// 	int	a;
-// 	int	*ptr;
+	int	x;
+	int	y;
+}	t_point;
 
-// 	a = 0;
-// 	ptr = &a;
-// 	ft_ft(ptr);
-// 	write(1, &a, 1);
-// 	return (0);
-// }
+#endif

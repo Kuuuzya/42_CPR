@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: skuznets <skuznets@student.42yerevan.am    +#+  +:+       +#+        */
+/*   By: skuznets <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 12:52:58 by skuznets          #+#    #+#             */
-/*   Updated: 2024/01/09 12:53:52 by skuznets         ###   ########.fr       */
+/*   Updated: 2024/01/10 14:20:06 by skuznets         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_swap(int *a, int *b)
 {
-	int		tmp;
-	
+	int	tmp;
+
 	tmp = *a;
 	*a = *b;
 	*b = tmp;

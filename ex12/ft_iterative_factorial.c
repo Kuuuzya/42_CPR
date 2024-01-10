@@ -3,19 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: skuznets <skuznets@student.42yerevan.am    +#+  +:+       +#+        */
+/*   By: skuznets <skuznets@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:08:19 by skuznets          #+#    #+#             */
-/*   Updated: 2024/01/09 13:08:42 by skuznets         ###   ########.fr       */
+/*   Updated: 2024/01/10 13:56:49 by skuznets         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int ft_iterative_factorial(int nb)
+int	ft_iterative_factorial(int nb)
 {
-	int		i;
-	int		fact;
+	int	i;
+	int	fact;
 
 	i = 1;
 	fact = 1;

@@ -1,29 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_print_params.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: skuznets <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/09 02:16:13 by skuznets          #+#    #+#             */
-/*   Updated: 2024/01/10 14:20:11 by skuznets         ###   ########.fr       */
+/*   Created: 2024/01/10 14:45:13 by skuznets          #+#    #+#             */
+/*   Updated: 2024/01/10 15:34:13 by skuznets         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_ft(int *nbr)
-{
-	*nbr = 42;
-}
-// int main(void)
-// {
-// 	int	a;
-// 	int	*ptr;
+void	ft_putchar(char ch);
 
-// 	a = 0;
-// 	ptr = &a;
-// 	ft_ft(ptr);
-// 	write(1, &a, 1);
-// 	return (0);
-// }
+int	main(int argc, char **argv)
+{
+	int	i;
+	int	j;
+
+	i = 1;
+	if (argc > 1)
+	{
+		while (i < argc)
+		{
+			j = 0;
+			while (argv[i][j] != '\0')
+			{
+				ft_putchar(argv[i][j]);
+				j++;
+			}
+			i++;
+			ft_putchar('\n');
+		}
+	}
+	return (0);
+}

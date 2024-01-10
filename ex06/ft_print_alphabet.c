@@ -3,29 +3,30 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_alphabet.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: skuznets <skuznets@student.42yerevan.am    +#+  +:+       +#+        */
+/*   By: skuznets <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/09 12:28:53 by skuznets          #+#    #+#             */
-/*   Updated: 2024/01/09 12:42:59 by skuznets         ###   ########.fr       */
+/*   Created: 2024/01/10 14:24:41 by skuznets          #+#    #+#             */
+/*   Updated: 2024/01/10 15:38:47 by skuznets         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_print_alphabet(void)
-{
-	char c;
+void	ft_putchar(char ch);
 
-	c = 'a';
-	while (c <= 'z')
+void	ft_print_alphabet(void)
+{
+	char	t;
+
+	t = 'a';
+	while (t <= 'z')
 	{
-		write(1, &c, 1);
-		c++;
+		ft_putchar(t);
+		t = t + 1;
 	}
 }
-/*
-int main()
-{
-	ft_print_alphabet();
-	return (0);
-}*/
+// int main (void)
+// {
+// 	ft_print_alphabet();
+// 	return 0;
+// }

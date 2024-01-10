@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: skuznets <skuznets@student.42yerevan.am    +#+  +:+       +#+        */
+/*   By: skuznets <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 13:03:10 by skuznets          #+#    #+#             */
-/*   Updated: 2024/01/09 13:03:50 by skuznets         ###   ########.fr       */
+/*   Updated: 2024/01/10 14:20:00 by skuznets         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_div_mod(int a, int b, int *div, int *mod)
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
 	*div = a / b;
 	*mod = a % b;

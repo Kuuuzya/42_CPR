@@ -1,29 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_foreach.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: skuznets <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/09 02:16:13 by skuznets          #+#    #+#             */
-/*   Updated: 2024/01/10 14:20:11 by skuznets         ###   ########.fr       */
+/*   Created: 2024/01/10 16:57:12 by skuznets          #+#    #+#             */
+/*   Updated: 2024/01/10 16:58:55 by skuznets         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_ft(int *nbr)
+void	ft_foreach(int *tab, int length, void (*f)(int))
 {
-	*nbr = 42;
-}
-// int main(void)
-// {
-// 	int	a;
-// 	int	*ptr;
+	int	i;
 
-// 	a = 0;
-// 	ptr = &a;
-// 	ft_ft(ptr);
-// 	write(1, &a, 1);
-// 	return (0);
-// }
+	i = 0;
+	while (i < length)
+	{
+		f(tab[i]);
+		i++;
+	}
+}

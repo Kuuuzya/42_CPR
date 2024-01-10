@@ -1,29 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_count_if.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: skuznets <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/09 02:16:13 by skuznets          #+#    #+#             */
-/*   Updated: 2024/01/10 14:20:11 by skuznets         ###   ########.fr       */
+/*   Created: 2024/01/10 16:59:46 by skuznets          #+#    #+#             */
+/*   Updated: 2024/01/10 17:01:17 by skuznets         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_ft(int *nbr)
+int	ft_count_if(char **tab, int (*f)(char*))
 {
-	*nbr = 42;
-}
-// int main(void)
-// {
-// 	int	a;
-// 	int	*ptr;
+	int	count;
+	int	i;
 
-// 	a = 0;
-// 	ptr = &a;
-// 	ft_ft(ptr);
-// 	write(1, &a, 1);
-// 	return (0);
-// }
+	i = 0;
+	count = 0;
+	while (tab[i] != 0)
+	{
+		if (f(tab[i]) == 1)
+			count++;
+		i++;
+	}
+	return (count);
+}

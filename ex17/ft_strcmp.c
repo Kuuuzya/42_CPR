@@ -1,29 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: skuznets <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/09 02:16:13 by skuznets          #+#    #+#             */
-/*   Updated: 2024/01/10 14:20:11 by skuznets         ###   ########.fr       */
+/*   Created: 2024/01/10 14:42:56 by skuznets          #+#    #+#             */
+/*   Updated: 2024/01/10 15:37:15 by skuznets         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_ft(int *nbr)
+int	ft_strcmp(char *s1, char *s2)
 {
-	*nbr = 42;
-}
-// int main(void)
-// {
-// 	int	a;
-// 	int	*ptr;
+	int	i;
 
-// 	a = 0;
-// 	ptr = &a;
-// 	ft_ft(ptr);
-// 	write(1, &a, 1);
-// 	return (0);
-// }
+	i = 0;
+	while (s1[i] == s2[i] && s1[i] && s2[i])
+		i++;
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+}
